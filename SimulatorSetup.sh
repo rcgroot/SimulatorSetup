@@ -58,7 +58,7 @@ for device in ~/Library/Developer/CoreSimulator/Devices/*/device.plist; do
               if [ -f ${GROUP_ARCHIVE} ]
               then
                 rm -r "${group}"/*
-                unzip ${GROUP_ARCHIVE} -d "${group}"
+                unzip -o ${GROUP_ARCHIVE} -d "${group}"
               fi
             fi
           fi
